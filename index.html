@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, teal, #1E90FF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container {
+            max-width: 450px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #logoArea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: teal;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        #logoArea img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #inputFieldArea {
+            padding: 20px;
+        }
+
+        .groupField {
+            margin: 15px 0;
+        }
+
+        .groupField label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .groupField input,
+        .groupField select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .groupField input:focus,
+        .groupField select:focus {
+            border-color: darkgoldenrod;
+            outline: none;
+        }
+
+        #buttonArea {
+            text-align: center;
+        }
+
+        #buttonArea button {
+            background-color: darkgoldenrod;
+            border: none;
+            padding: 12px 25px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #buttonArea button:hover {
+            background-color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <form action="homepage.html">
+        <div id="container">
+            <div id="logoArea">
+                <img src="images/logo.jpg" alt="Logo">
+                <h3>Registration</h3>
+            </div>
+            <div id="inputFieldArea">
+                <h3>Personal Information</h3>
+                <div class="groupField">
+                    <label for="fname">Enter Firstname:</label>
+                    <input type="text" id="fname" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="mname">Enter Middlename:</label>
+                    <input type="text" id="mname" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="lname">Enter Lastname:</label>
+                    <input type="text" id="lname" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="suffix">Select Suffix:</label>
+                    <select id="suffix" autocomplete="off" required>
+                        <option>None</option>
+                        <option>Jr</option>
+                        <option>Sr</option>
+                        <option>I</option>
+                        <option>II</option>
+                        <option>III</option>
+                        <option>IV</option>
+                        <option>V</option>
+                    </select>
+                </div>
+                <div class="groupField">
+                    <label for="bdate">Pick Birthdate:</label>
+                    <input type="date" id="bdate" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="email">Enter Email Address:</label>
+                    <input type="email" id="email" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="username">Enter Username:</label>
+                    <input type="text" id="username" autocomplete="off" required>
+                </div>
+                <div class="groupField">
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="password" autocomplete="off" required>
+                </div>
+                <div id="buttonArea">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
